@@ -1,0 +1,60 @@
+<mvc:View controllerName="com.sap.citizen.controller.View1"
+    xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    
+	<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormToolbar"
+			
+ >
+			<f:toolbar>
+				<Toolbar id="TB1">
+					<Title id="Title1" text=""/>
+					<ToolbarSpacer />
+					<Button icon="sap-icon://settings"/>
+					<Button icon="sap-icon://drop-down-list" />
+				</Toolbar>
+			</f:toolbar>
+			<f:content>
+				
+				<Label text="First Name" />
+				<Input id="idInp1"  width="50%" />
+				<Label text="Middle Name" />
+				<Input id="idInp2"  width="50%"/>	
+				<Label text="Last Name" />
+				<Input id="idInp3"  width="50%"/>
+				<Label text="Email" />
+                <Input id="idInp4"  width="50%"/>
+                <Label text="Phone"/>
+                <Input id="idInp5"  width="50%" />
+               
+
+			</f:content>
+            
+		</f:SimpleForm>
+         
+			
+			<FlexBox
+				height="100px"
+				alignItems="Center"
+				justifyContent="Center">
+				<Button  id="idButtn1"  type="Emphasized" text="Save" press="onClick" class="sapUiSmallMarginEnd"/>
+    
+                <Button id="idButtn2" type="Reject" text="Print" press="onClickPrint" class="sapUiSmallMarginEnd" enabled="false"/>
+                
+                    
+			</FlexBox>
+				
+							
+								
+	</VBox>
+    
+   
+   
+    
+
+    </Page>
+</mvc:View>
